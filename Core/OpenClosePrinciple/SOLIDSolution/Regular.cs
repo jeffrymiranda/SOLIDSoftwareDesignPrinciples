@@ -10,7 +10,7 @@ namespace Core.OpenClosePrinciple.SOLIDSolution
 
         public override double CalculateWeeklySalary(int hoursReported)
         {
-            int extraHours = GetExtraHours(hoursReported);
+            int extraHours = (hoursReported > WeeklyHours) ? hoursReported - WeeklyHours : 0;
             return hoursReported * costPerHour + extraHours * (costPerHour * 1.3);
         }
     }

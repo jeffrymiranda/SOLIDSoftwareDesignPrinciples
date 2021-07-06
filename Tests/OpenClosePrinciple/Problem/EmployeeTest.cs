@@ -29,6 +29,11 @@ namespace Tests.OpenClosePrinciple.Problem
             Assert.Pass();
         }
 
+
+        /// <summary>
+        /// It is required that the weekly salary for the contractors be calculated without extra increments for the extra hours.
+        /// So, the following test must be assert.
+        /// </summary>
         [Test]
         public void GetSalaryForContractor_HappyPath()
         {

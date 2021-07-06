@@ -18,10 +18,11 @@ namespace Core.OpenClosePrinciple.SOLIDSolution
             return this.fullName;
         }
 
-        protected static int GetExtraHours(int hoursReported)
-        {
-            return (hoursReported > WeeklyHours) ? hoursReported - WeeklyHours : 0;
-        }
+        /// <summary>
+        /// To calculate the weekly salary
+        /// </summary>
+        /// <param name="hoursReported"></param>
+        /// <returns></returns>
         public abstract double CalculateWeeklySalary(int hoursReported);
     }
 }

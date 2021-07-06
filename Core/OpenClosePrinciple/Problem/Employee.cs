@@ -21,8 +21,8 @@ namespace Core.OpenClosePrinciple.Problem
         }
 
         /// <summary>
-        /// This method calculates the weekly salary taking into consideration the extra uour reported.
-        /// Notice that this method is intelligent enough to calculate the extra hour of the support workers.
+        /// This method calculates the weekly salary taking into consideration the extra hours reported.
+        /// Notice that this method is intelligent enough to calculate the extra hour(s) of the support workers differently.
         /// </summary>
         /// <param name="hoursReported"></param>
         /// <returns></returns>
