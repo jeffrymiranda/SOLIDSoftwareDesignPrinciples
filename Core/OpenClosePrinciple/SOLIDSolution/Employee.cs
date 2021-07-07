@@ -1,8 +1,8 @@
-﻿using System;
-namespace Core.OpenClosePrinciple.SOLIDSolution
+﻿namespace Core.OpenClosePrinciple.SOLIDSolution
 {
     public abstract class Employee
     {
+        #region miscellaneous
         protected const int WeeklyHours = 40;
         private readonly string fullName;
         protected readonly double costPerHour;
@@ -17,6 +17,7 @@ namespace Core.OpenClosePrinciple.SOLIDSolution
         {
             return this.fullName;
         }
+        #endregion
 
         /// <summary>
         /// To calculate the weekly salary

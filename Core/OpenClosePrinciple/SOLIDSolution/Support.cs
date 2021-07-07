@@ -1,12 +1,13 @@
-﻿using System;
-namespace Core.OpenClosePrinciple.SOLIDSolution
+﻿namespace Core.OpenClosePrinciple.SOLIDSolution
 {
     public class Support : Employee
     {
+        #region miscellaneous
         public Support(string fullName, double costPerHour) : base(fullName, costPerHour)
         {
 
         }
+        #endregion
 
         public override double CalculateWeeklySalary(int hoursReported)
         {
