@@ -1,39 +1,41 @@
-﻿using System;
-namespace Core.OpenClosePrinciple.CommonSolution
+﻿namespace Core.OpenClosePrinciple.CommonSolution
 {
     public class Employee
     {
+        #region miscellaneous
         private const int WeeklyHours = 40;
         private readonly string fullName;
         private readonly string role;
         private readonly double costPerHour;
+        private readonly int hoursReported;
 
-        public Employee(string fullName, string role, double costPerHour)
+        public Employee(string fullName, string role, double costPerHour, int hoursReported)
         {
             this.fullName = fullName;
             this.role = role;
             this.costPerHour = costPerHour;
+            this.hoursReported = hoursReported;
         }
 
         public string GetFullName()
         {
-            return this.fullName;
+            return fullName;
         }
+        #endregion 
 
         /// <summary>
-        /// This method is intelligent enough to calculate(s) the weekly salary of the contractors, support and regular employees.
-        /// Notice that the extra hour for the contractors have the same cost.
+        /// This method is intelligent enough to calculate the weekly salary for the contractor, support and regular employees.
+        /// Notice that the extra hour(s) for contractors have the same cost.
         /// </summary>
-        /// <param name="hoursReported"></param>
         /// <returns></returns>
-        public double CalculateWeeklySalary(int hoursReported)
+        public double CalculateWeeklySalary()
         {
             int extraHours = (hoursReported > WeeklyHours) ? hoursReported - WeeklyHours : 0;
-            return this.role switch
+            return role switch
             {
-                "Contractor" => hoursReported * this.costPerHour,
-                "Support" => hoursReported * this.costPerHour + extraHours * (this.costPerHour * 1.5),
-                _ => hoursReported * this.costPerHour + extraHours * (this.costPerHour * 1.3),
+                "Contractor" => hoursReported * costPerHour,
+                "Support" => hoursReported * costPerHour + extraHours * (costPerHour * 1.5),
+                _ => hoursReported * costPerHour + extraHours * (costPerHour * 1.3),
             };
         }
     }

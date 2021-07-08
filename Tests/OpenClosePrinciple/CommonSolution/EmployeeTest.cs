@@ -12,18 +12,17 @@ namespace Test.OpenClosePrinciple.CommonSolution
         {
             Console.WriteLine("===");
             Console.WriteLine("OpenClosePrinciple - Common Solution");
-            const int hoursReported = 42;
 
             List<Employee> employees = new()
             {
-                new Employee("Svetlana Isakova", "Support", 15.25),
-                new Employee("Dmitry Jemerov", "Developer", 17.50),
-                new Employee("Aleksei Sedunov", "Contractor", 19.50)
+                new Employee("Svetlana Isakova", "Support", 15.25, 48),
+                new Employee("Dmitry Jemerov", "Developer", 17.50, 42),
+                new Employee("Aleksei Sedunov", "Contractor", 19.50, 45)
             };
 
             employees.ForEach(delegate (Employee employee)
             {
-                Console.WriteLine(employee.GetFullName() + " salary: $" + employee.CalculateWeeklySalary(hoursReported));
+                Console.WriteLine(employee.GetFullName() + " salary: $" + employee.CalculateWeeklySalary());
             });
             Console.WriteLine("===");
             Assert.Pass();
@@ -33,10 +32,10 @@ namespace Test.OpenClosePrinciple.CommonSolution
         public void GetSalaryForContractor_HappyPath()
         {
             // arrange
-            var contractor = new Employee("Aleksei Sedunov", "Contractor", 19.50);
+            var contractor = new Employee("Aleksei Sedunov", "Contractor", 19.50, 42);
 
             // act
-            var weeklySalary = contractor.CalculateWeeklySalary(42);
+            var weeklySalary = contractor.CalculateWeeklySalary();
 
             // assert
             Assert.AreEqual(819, weeklySalary);

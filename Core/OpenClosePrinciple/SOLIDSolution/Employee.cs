@@ -6,11 +6,13 @@
         protected const int WeeklyHours = 40;
         private readonly string fullName;
         protected readonly double costPerHour;
+        protected readonly int hoursReported;
 
-        protected Employee(string fullName, double costPerHour)
+        protected Employee(string fullName, double costPerHour, int hoursReported)
         {
             this.fullName = fullName;
             this.costPerHour = costPerHour;
+            this.hoursReported = hoursReported;
         }
 
         public string GetFullName()
@@ -22,8 +24,7 @@
         /// <summary>
         /// To calculate the weekly salary
         /// </summary>
-        /// <param name="hoursReported"></param>
         /// <returns></returns>
-        public abstract double CalculateWeeklySalary(int hoursReported);
+        public abstract double CalculateWeeklySalary();
     }
 }
