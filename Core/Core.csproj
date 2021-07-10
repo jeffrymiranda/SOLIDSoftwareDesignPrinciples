@@ -5,4 +5,16 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="OpenClosePrinciple\SOLIDSolution\Service\" />
+    <None Remove="OpenClosePrinciple\CommonSolution\Service\" />
+    <None Remove="OpenClosePrinciple\CommonSolution\Domain\" />
+    <None Remove="OpenClosePrinciple\SOLIDSolution\Domain\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OpenClosePrinciple\SOLIDSolution\Service\" />
+    <Folder Include="OpenClosePrinciple\CommonSolution\Service\" />
+    <Folder Include="OpenClosePrinciple\CommonSolution\Domain\" />
+    <Folder Include="OpenClosePrinciple\SOLIDSolution\Domain\" />
+  </ItemGroup>
 </Project>

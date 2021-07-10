@@ -1,44 +1,58 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using System.Collections.Generic;
-using Core.OpenClosePrinciple.CommonSolution;
-using System;
+using Core.OpenClosePrinciple.CommonSolution.Domain;
+using Core.OpenClosePrinciple.CommonSolution.Service;
 
 namespace Test.OpenClosePrinciple.CommonSolution
 {
     public class EmployeeTest
     {
         [Test]
-        public void GetSalary_HappyPath()
+        public void PrintPayroll_HappyPath()
         {
             Console.WriteLine("===");
             Console.WriteLine("OpenClosePrinciple - Common Solution");
+            Console.WriteLine("===");
+            Console.WriteLine("");
 
             List<Employee> employees = new()
             {
-                new Employee("Svetlana Isakova", "Support", 15.25, 48),
-                new Employee("Dmitry Jemerov", "Developer", 17.50, 42),
-                new Employee("Aleksei Sedunov", "Contractor", 19.50, 45)
+                new Employee("Robert C Martin", 18.15, 36),
+                new Employee("Svetlana Isakova", 15.25, 44),
+                new Support("Dmitry Jemerov", 13.8, 38),
+                new Support("Aleksei Sedunov", 14.6, 47)
             };
 
-            employees.ForEach(delegate (Employee employee)
-            {
-                Console.WriteLine(employee.GetFullName() + " salary: $" + employee.CalculateWeeklySalary());
-            });
+            Payroll.PrintPayroll(employees);
             Console.WriteLine("===");
             Assert.Pass();
         }
 
         [Test]
-        public void GetSalaryForContractor_HappyPath()
+        public void GetSalaryForRegular_HappyPath()
         {
             // arrange
-            var contractor = new Employee("Aleksei Sedunov", "Contractor", 19.50, 42);
+            var regular = new Employee("Svetlana Isakova", 15.25, 44);
 
             // act
-            var weeklySalary = contractor.CalculateWeeklySalary();
+            var weeklySalary = Payroll.CalculateWeeklyExtraHoursSalary(regular);
 
             // assert
-            Assert.AreEqual(819, weeklySalary);
+            Assert.AreEqual(79.3d, weeklySalary);
+        }
+
+        [Test]
+        public void GetSalaryForSupport_HappyPath()
+        {
+            // arrange
+            var support = new Support("Aleksei Sedunov", 15.25, 44);
+
+            // act
+            var weeklySalary = Payroll.CalculateWeeklyExtraHoursSalary(support);
+
+            // assert
+            Assert.AreEqual(91.5d, weeklySalary);
         }
     }
 }
