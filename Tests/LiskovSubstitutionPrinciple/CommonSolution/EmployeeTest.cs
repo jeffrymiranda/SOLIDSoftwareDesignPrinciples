@@ -12,7 +12,7 @@ namespace Tests.LiskovSubstitutionPrinciple.CommonSolution
         public void PrintPayroll_HappyPath()
         {
             Console.WriteLine("===");
-            Console.WriteLine("LiskovSubstitutionPrinciple - Common Solution");
+            Console.WriteLine("Liskov Substitution Principle - Common Solution");
             Console.WriteLine("===");
             Console.WriteLine("");
 
