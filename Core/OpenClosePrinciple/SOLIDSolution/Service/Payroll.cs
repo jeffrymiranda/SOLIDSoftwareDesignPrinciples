@@ -16,10 +16,11 @@ namespace Core.OpenClosePrinciple.SOLIDSolution.Service
             {
                 double ordinaryWeeklySalary = employee.CalculateWeeklyOrdinarySalary();
                 double extraHoursWeeklySalary = employee.CalculateWeeklyExtraHoursSalary();
+                int ordinaryHoursReported = employee.HoursReported - employee.GetExtraHours();
                 Console.WriteLine($"Employee name: {employee.FullName}");
-                Console.WriteLine($"Weekly salary (ordinary): {ordinaryWeeklySalary}");
-                Console.WriteLine($"Weekly salary (extra hours): {extraHoursWeeklySalary}");
-                Console.WriteLine($"Weekly salary (total): {ordinaryWeeklySalary + extraHoursWeeklySalary }");
+                Console.WriteLine($"Ordinary salary amount ({ordinaryHoursReported}h): ${ordinaryWeeklySalary}");
+                Console.WriteLine($"Extra hours salary amount ({employee.GetExtraHours()}h): ${extraHoursWeeklySalary}");
+                Console.WriteLine($"Weekly salary (total): ${ordinaryWeeklySalary + extraHoursWeeklySalary }");
                 Console.WriteLine("===");
                 Console.WriteLine("");
             });

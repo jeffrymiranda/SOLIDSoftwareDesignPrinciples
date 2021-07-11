@@ -12,15 +12,15 @@ namespace Tests.OpenClosePrinciple.SOLIDSolution
         public void PrintPayroll_HappyPath()
         {
             Console.WriteLine("===");
-            Console.WriteLine("OpenClosePrinciple - SOLID Solution");
+            Console.WriteLine("Open Close Principle - SOLID Solution");
             Console.WriteLine("===");
             Console.WriteLine("");
 
             List<Employee> employees = new()
             {
-                new Regular("Robert C Martin", 18.15, 42),
+                new Regular("Robert C Martin", 18.15, 36),
                 new Regular("Svetlana Isakova", 15.25, 44),
-                new Support("Dmitry Jemerov", 13.8, 45),
+                new Support("Dmitry Jemerov", 13.8, 38),
                 new Support("Aleksei Sedunov", 14.6, 47)
             };
 
