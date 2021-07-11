@@ -4,7 +4,7 @@
     {
         #region Fileds
 
-        public const int WeeklyHours = 40;
+        private const int WeeklyHours = 40;
         private readonly string fullName;
         private readonly double costPerHour;
         private readonly int hoursReported;
@@ -13,7 +13,7 @@
 
         #region Constructor
 
-        public Employee(string fullName, double costPerHour, int hoursReported)
+        protected Employee(string fullName, double costPerHour, int hoursReported)
         {
             this.fullName = fullName;
             this.costPerHour = costPerHour;
@@ -25,7 +25,7 @@
 
         public string FullName => fullName;
 
-        public double CostPerHour => costPerHour;
+        protected double CostPerHour => costPerHour;
 
         public int HoursReported => hoursReported;
 

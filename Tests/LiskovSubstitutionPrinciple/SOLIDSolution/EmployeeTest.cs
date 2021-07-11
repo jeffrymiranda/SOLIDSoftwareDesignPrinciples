@@ -12,7 +12,7 @@ namespace Tests.LiskovSubstitutionPrinciple.SOLIDSolution
         public void PrintPayrollForInternalEmployees_HappyPath()
         {
             Console.WriteLine("===");
-            Console.WriteLine("LiskovSubstitutionPrinciple - SOLID Solution");
+            Console.WriteLine("Liskov Substitution Principle - SOLID Solution");
             Console.WriteLine("===");
             Console.WriteLine("");
 
@@ -31,7 +31,7 @@ namespace Tests.LiskovSubstitutionPrinciple.SOLIDSolution
         public void PrintPayrollContractorsEmployees_HappyPath()
         {
             Console.WriteLine("===");
-            Console.WriteLine("LiskovSubstitutionPrinciple - SOLID Solution");
+            Console.WriteLine("Liskov Substitution Principle - SOLID Solution");
             Console.WriteLine("===");
             Console.WriteLine("");
 
