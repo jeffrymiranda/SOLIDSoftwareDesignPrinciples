@@ -12,7 +12,7 @@ namespace Test.OpenClosePrinciple.CommonSolution
         public void PrintPayroll_HappyPath()
         {
             Console.WriteLine("===");
-            Console.WriteLine("OpenClosePrinciple - Common Solution");
+            Console.WriteLine("Open Close Principle - Common Solution");
             Console.WriteLine("===");
             Console.WriteLine("");
 

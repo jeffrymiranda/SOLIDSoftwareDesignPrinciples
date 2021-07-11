@@ -4,7 +4,7 @@
     {
         #region Fileds
 
-        public const int WeeklyHours = 40;
+        private const int WeeklyHours = 40;
         private readonly string fullName;
         private readonly double costPerHour;
         private readonly int hoursReported;
