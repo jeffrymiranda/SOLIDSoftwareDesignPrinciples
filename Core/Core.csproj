@@ -10,11 +10,21 @@
     <None Remove="OpenClosePrinciple\CommonSolution\Service\" />
     <None Remove="OpenClosePrinciple\CommonSolution\Domain\" />
     <None Remove="OpenClosePrinciple\SOLIDSolution\Domain\" />
+    <None Remove="LiskovSubstitutionPrinciple\" />
+    <None Remove="LiskovSubstitutionPrinciple\CommonSolution\" />
+    <None Remove="LiskovSubstitutionPrinciple\CommonSolution\Domain\" />
+    <None Remove="LiskovSubstitutionPrinciple\CommonSolution\Service\" />
+    <None Remove="LiskovSubstitutionPrinciple\CommonSolution %28copy%29\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OpenClosePrinciple\SOLIDSolution\Service\" />
     <Folder Include="OpenClosePrinciple\CommonSolution\Service\" />
     <Folder Include="OpenClosePrinciple\CommonSolution\Domain\" />
     <Folder Include="OpenClosePrinciple\SOLIDSolution\Domain\" />
+    <Folder Include="LiskovSubstitutionPrinciple\" />
+    <Folder Include="LiskovSubstitutionPrinciple\CommonSolution\" />
+    <Folder Include="LiskovSubstitutionPrinciple\CommonSolution\Domain\" />
+    <Folder Include="LiskovSubstitutionPrinciple\CommonSolution\Service\" />
+    <Folder Include="LiskovSubstitutionPrinciple\SOLIDSolution\" />
   </ItemGroup>
 </Project>
