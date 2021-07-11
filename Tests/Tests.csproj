@@ -18,11 +18,15 @@
   <ItemGroup>
     <None Remove="LiskovSubstitutionPrinciple\" />
     <None Remove="LiskovSubstitutionPrinciple\CommonSolution\" />
-    <None Remove="LiskovSubstitutionPrinciple\CommonSolution %28copy%29\" />
+    <None Remove="InterfaceSegregationPrinciple\" />
+    <None Remove="InterfaceSegregationPrinciple\CommonSolution\" />
+    <None Remove="InterfaceSegregationPrinciple\SOLIDSolution\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LiskovSubstitutionPrinciple\" />
     <Folder Include="LiskovSubstitutionPrinciple\CommonSolution\" />
-    <Folder Include="LiskovSubstitutionPrinciple\CommonSolution %28copy%29\" />
+    <Folder Include="InterfaceSegregationPrinciple\" />
+    <Folder Include="InterfaceSegregationPrinciple\CommonSolution\" />
+    <Folder Include="InterfaceSegregationPrinciple\SOLIDSolution\" />
   </ItemGroup>
 </Project>

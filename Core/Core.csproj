@@ -15,6 +15,15 @@
     <None Remove="LiskovSubstitutionPrinciple\CommonSolution\Domain\" />
     <None Remove="LiskovSubstitutionPrinciple\CommonSolution\Service\" />
     <None Remove="LiskovSubstitutionPrinciple\CommonSolution %28copy%29\" />
+    <None Remove="InterfaceSegregationPrinciple\" />
+    <None Remove="InterfaceSegregationPrinciple\CommonSolution\" />
+    <None Remove="InterfaceSegregationPrinciple\SOLIDSolution\" />
+    <None Remove="InterfaceSegregationPrinciple\CommonSolution\Domain\" />
+    <None Remove="InterfaceSegregationPrinciple\CommonSolution\Service\" />
+    <None Remove="InterfaceSegregationPrinciple\CommonSolution\DataBase\" />
+    <None Remove="InterfaceSegregationPrinciple\SOLIDSolution\DataBase\" />
+    <None Remove="InterfaceSegregationPrinciple\SOLIDSolution\Domain\" />
+    <None Remove="InterfaceSegregationPrinciple\SOLIDSolution\Service\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OpenClosePrinciple\SOLIDSolution\Service\" />
@@ -26,5 +35,14 @@
     <Folder Include="LiskovSubstitutionPrinciple\CommonSolution\Domain\" />
     <Folder Include="LiskovSubstitutionPrinciple\CommonSolution\Service\" />
     <Folder Include="LiskovSubstitutionPrinciple\SOLIDSolution\" />
+    <Folder Include="InterfaceSegregationPrinciple\" />
+    <Folder Include="InterfaceSegregationPrinciple\CommonSolution\" />
+    <Folder Include="InterfaceSegregationPrinciple\SOLIDSolution\" />
+    <Folder Include="InterfaceSegregationPrinciple\CommonSolution\Domain\" />
+    <Folder Include="InterfaceSegregationPrinciple\CommonSolution\Service\" />
+    <Folder Include="InterfaceSegregationPrinciple\CommonSolution\DataBase\" />
+    <Folder Include="InterfaceSegregationPrinciple\SOLIDSolution\DataBase\" />
+    <Folder Include="InterfaceSegregationPrinciple\SOLIDSolution\Domain\" />
+    <Folder Include="InterfaceSegregationPrinciple\SOLIDSolution\Service\" />
   </ItemGroup>
 </Project>
