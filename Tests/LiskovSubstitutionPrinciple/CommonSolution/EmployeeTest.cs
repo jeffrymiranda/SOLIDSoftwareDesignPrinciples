@@ -23,7 +23,7 @@ namespace Tests.LiskovSubstitutionPrinciple.CommonSolution
                 new Contractor("Dmitry Jemerov", 13.8, 45)
             };
 
-            Payroll.PrintPayroll(employees);
+            Payroll.PrintWeeklyPayroll(employees);
             Console.WriteLine("===");
             Assert.Pass();
         }

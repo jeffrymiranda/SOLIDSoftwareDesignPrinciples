@@ -10,8 +10,10 @@ namespace Core.LiskovSubstitutionPrinciple.CommonSolution.Service
         /// Weekly payroll report
         /// </summary>
         /// <param name="employees"></param>
-        public static void PrintPayroll(List<Employee> employees)
+        public static void PrintWeeklyPayroll(List<Employee> employees)
         {
+            Console.WriteLine("Weekly payroll report for employees");
+            Console.WriteLine("");
             employees.ForEach(delegate (Employee employee)
             {
                 double ordinaryWeeklySalary = employee.CalculateWeeklyOrdinarySalary();

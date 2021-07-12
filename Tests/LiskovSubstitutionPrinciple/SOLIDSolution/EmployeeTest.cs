@@ -9,39 +9,21 @@ namespace Tests.LiskovSubstitutionPrinciple.SOLIDSolution
     public class EmployeeTest
     {
         [Test]
-        public void PrintPayrollForInternalEmployees_HappyPath()
+        public void PrintPayroll_HappyPath()
         {
             Console.WriteLine("===");
             Console.WriteLine("Liskov Substitution Principle - SOLID Solution");
             Console.WriteLine("===");
             Console.WriteLine("");
 
-            List<Employee> employees = new()
+            var payrollDictionary = new Dictionary<Employee, IPayroll>
             {
-                new Regular("Svetlana Isakova", 15.25, 44),
-                new Support("Aleksei Sedunov", 14.6, 47)
+                { new Regular("Svetlana Isakova", 15.25, 44), new InternalPayroll()},
+                { new Support("Aleksei Sedunov", 14.6, 47), new InternalPayroll()},
+                { new Contractor("Dmitry Jemerov", 13.8, 45), new ContractorPayroll()}
             };
 
-            Payroll.PrintPayrollForInternals(employees);
-            Console.WriteLine("===");
-            Assert.Pass();
-        }
-
-        [Test]
-        public void PrintPayrollContractorsEmployees_HappyPath()
-        {
-            Console.WriteLine("===");
-            Console.WriteLine("Liskov Substitution Principle - SOLID Solution");
-            Console.WriteLine("===");
-            Console.WriteLine("");
-
-            List<Employee> employees = new()
-            {
-                new Contractor("Robert C Martin", 14.6, 47),
-                new Contractor("Dmitry Jemerov", 13.8, 45)
-            };
-
-            Payroll.PrintPayrollForContractors(employees);
+            PayrollService.PrintWeeklyPayroll(payrollDictionary);
             Console.WriteLine("===");
             Assert.Pass();
         }
