@@ -45,4 +45,7 @@
     <Folder Include="InterfaceSegregationPrinciple\SOLIDSolution\Domain\" />
     <Folder Include="InterfaceSegregationPrinciple\SOLIDSolution\Service\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
+  </ItemGroup>
 </Project>
