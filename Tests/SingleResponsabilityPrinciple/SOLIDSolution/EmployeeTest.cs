@@ -1,7 +1,6 @@
-﻿using System;
-using Core.SingleResponsabilityPrinciple.SOLIDSolution.Domain;
-using Core.SingleResponsabilityPrinciple.SOLIDSolution.Service;
+﻿using Core.SingleResponsabilityPrinciple.SOLIDSolution.Domain;
 using NUnit.Framework;
+using System;
 
 namespace Tests.SingleResponsabilityPrinciple.SOLIDSolution
 {
@@ -18,7 +17,8 @@ namespace Tests.SingleResponsabilityPrinciple.SOLIDSolution
             Console.WriteLine();
             Console.WriteLine();
             EmployeeCRUD employee = new EmployeeCRUD(list);
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 10; i++)
+            {
                 employee.InsertEmployee(new Employee { EmployeeID = i, EmployeeName = i.ToString() + " Employee" });
             }
             Console.WriteLine();
